@@ -16,7 +16,7 @@ async function bootstrap() {
 
   const config = new DocumentBuilder()
     .setTitle('AvalonJS')
-    .setDescription('Avalon Boarf Game')
+    .setDescription('Avalon Board Game')
     .setVersion('1.0')
     .build()
   const documentFactory = () => SwaggerModule.createDocument(app, config)
