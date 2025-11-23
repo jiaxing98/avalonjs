@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common'
-import { RoomController } from '../room/room.controller'
-import { LocalRoomDataSourceImpl, RoomDataSourceToken } from '../room/room.datasource'
-import { RoomServiceImpl, RoomServiceToken } from '../room/room.service'
+import { RoomController } from './controllers/room.controller'
+import { LocalRoomDataSourceImpl, RoomDataSourceToken } from './data/data_sources/room.datasource'
+import { RoomServiceImpl, RoomServiceToken } from './domain/services/room.service'
 
 @Module({
   imports: [],

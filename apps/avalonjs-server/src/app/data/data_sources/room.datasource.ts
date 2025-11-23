@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common'
-import { Player } from './entities/player.entity'
-import { Room } from './entities/room.entity'
+import { Player } from '../../domain/entities/player.entity'
+import { Room } from '../../domain/entities/room.entity'
 
 export const RoomDataSourceToken = Symbol('RoomDataSource')
 

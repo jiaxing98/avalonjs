@@ -1,8 +1,8 @@
 import { Inject, Injectable } from '@nestjs/common'
-import { CreatePlayerDto } from './dto/create_player_dto'
-import { Player } from './entities/player.entity'
-import { Room } from './entities/room.entity'
-import { RoomDataSourceToken, type RoomDataSource } from './room.datasource'
+import { type RoomDataSource, RoomDataSourceToken } from '../../data/data_sources/room.datasource'
+import { CreatePlayerDto } from '../../data/dtos/create_player_dto'
+import { Player } from '../entities/player.entity'
+import { Room } from '../entities/room.entity'
 
 export const RoomServiceToken = Symbol('RoomService')
 

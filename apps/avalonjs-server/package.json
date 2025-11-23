@@ -74,6 +74,16 @@
             "buildTarget": "@avalonjs/avalonjs-server:build:production"
           }
         }
+      },
+      "test": {
+        "executor": "@nx/jest:jest",
+        "outputs": [
+          "{workspaceRoot}/coverage/apps/avalonjs-server"
+        ],
+        "options": {
+          "jestConfig": "apps/avalonjs-server/jest.config.cts",
+          "passWithNoTests": true
+        }
       }
     }
   },
