@@ -2,23 +2,45 @@
   "name": "@avalonjs/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "app": "nx g @nx/react:app",
+    "build app": "nx build avalonjs",
+    "lint app": "nx lint avalonjs",
+    "test app": "nx test avalonjs",
+    "e2e": "nx e2e avalonjs-e2e",
+    "server": "nx servr avalonjs-server",
+    "build server": "nx build avalonjs-server",
+    "lint server": "nx lint avalonjs-server",
+    "test server": "nx test avalonjs-server",
+    "build:dev": "nx build --configuration development"
+  },
   "private": true,
   "dependencies": {
+    "@nestjs/common": "^11.0.0",
+    "@nestjs/core": "^11.0.0",
+    "@nestjs/platform-express": "^11.0.0",
+    "axios": "^1.6.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router-dom": "6.29.0"
+    "react-router-dom": "6.29.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.8.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
+    "@nestjs/schematics": "^11.0.0",
+    "@nestjs/testing": "^11.0.0",
     "@nx/cypress": "22.1.1",
     "@nx/eslint": "22.1.1",
     "@nx/eslint-plugin": "22.1.1",
     "@nx/js": "22.1.1",
+    "@nx/nest": "22.1.1",
+    "@nx/node": "22.1.1",
     "@nx/react": "22.1.1",
     "@nx/vite": "22.1.1",
     "@nx/vitest": "22.1.1",
     "@nx/web": "22.1.1",
+    "@nx/webpack": "22.1.1",
     "@nx/workspace": "22.1.1",
     "@swc-node/register": "~1.9.1",
     "@swc/cli": "~0.6.0",
@@ -51,6 +73,7 @@
     "typescript": "~5.9.2",
     "typescript-eslint": "^8.40.0",
     "vite": "^7.0.0",
-    "vitest": "^4.0.0"
+    "vitest": "^4.0.0",
+    "webpack-cli": "^5.1.4"
   }
 }
